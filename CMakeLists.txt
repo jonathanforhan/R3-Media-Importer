@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.20)
+project(R3MI VERSION 1.0.0 LANGUAGES C)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR})
+set(CMAKE_C_STANDARD 17)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+option(R3MI_BUILD_TESTS ON)
+set(R3MI_BUILD_TESTS ON)
+
+add_subdirectory(src)
+
+if(R3_BUILD_TESTS)
+	add_subdirectory(tests)
+endif()

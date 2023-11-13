@@ -1,0 +1,7 @@
+out/
+*build*/
+.vs
+.vscode
+.idea
+.cache
+compile_commands.json
